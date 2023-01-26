@@ -7,8 +7,7 @@ A zsh plugin to prepend sudo to a command. The default bindinding is Alt+s. The 
 some really long zsh command
 ```
 
-Just remembered you'll have to sudo? Assuming you have [vi keybindings](http://www.techrepublic.com/blog/linux-and-open-source/using-vi-key-bindings-in-bash-and-zsh/), you
-can now hit Esc to go into command mode, and then Esc+S to prepend a sudo to your long command without losing your place.
+Just remembered you'll have to sudo? you can now hit Alt+s to prepend a sudo to your long command without losing your place.
 
 Installation
 --------
