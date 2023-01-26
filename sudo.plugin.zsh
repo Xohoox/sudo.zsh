@@ -1,3 +1,9 @@
+if [ -z $SUDO_ZSH_KEYBINDING ]; then
+    binding='^[s'
+else
+    binding=$SUDO_ZSH_KEYBINDING
+fi
+
 # Esc-S to insert sudo in front of command
 function prepend-sudo { # Insert "sudo " at the beginning of the line
   if [[ $BUFFER != "sudo "* ]]; then
@@ -6,6 +12,4 @@ function prepend-sudo { # Insert "sudo " at the beginning of the line
 }
 zle -N prepend-sudo
 
-# Note: requires vi key bindings in zsh!
-bindkey -M vicmd '\es' prepend-sudo
-
+bindkey $binding prepend-sudo

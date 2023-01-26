@@ -1,7 +1,7 @@
 sudo.zsh
 ========
 
-A zsh plugin to use Esc+S to prepend sudo to a command with vi keybindings.
+A zsh plugin to prepend sudo to a command. The default bindinding is Alt+s. The keybinding can be configured using the `SUDO_ZSH_KEYBINDING` variable
 
 ```bash
 some really long zsh command
